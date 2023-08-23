@@ -1,0 +1,21 @@
+.c-body-record {
+  margin-block-end: rem(30);
+  @media screen and (min-width: 768px) {
+    margin-block-end: rem(55);
+  }
+  &__chart {
+    background-color: $color-dark-2;
+    padding: rem(16) rem(24);
+  }
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    color: $color-white;
+    letter-spacing: 0.15;
+    gap: rem(20);
+    &--sub {
+      @include h3;
+      letter-spacing: 0.11;
+    }
+  }
+}

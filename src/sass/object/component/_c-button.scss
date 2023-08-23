@@ -1,0 +1,18 @@
+// ==========================================================================
+// component - button
+// ==========================================================================
+
+.c-button {
+  padding: rem(14) rem(15);
+  min-width: rem(296);
+  border-radius: rem(5);
+  color: $color-white;
+  transition: all 0.3s;
+  transform-origin: center;
+  &--primary {
+    background: $bg-button-gradiant;
+  }
+  &:hover {
+    background: $color-primary;
+  }
+}

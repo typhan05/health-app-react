@@ -1,0 +1,23 @@
+// ==========================================================================
+// functions - common
+// ==========================================================================
+
+// /**
+// * The `rem` function is used to convert pixel values to rem values.
+// */
+@function rem($pxValue) {
+  $remValue: calc($pxValue / 16) + rem;
+  @return $remValue;
+}
+
+// helper function to make sure the unit type (px, rem)
+// is removed we want just the raw value no unit
+@function get-value($n) {
+  @return calc($n / ($n * 0 + 1));
+}
+
+/* The `@function lh(-size, -height)` is a Sass function that calculates the line height
+ratio based on the font size and line height values provided. */
+@function lh($font-size, $line-height) {
+  @return get-value(calc($line-height / $font-size));
+}

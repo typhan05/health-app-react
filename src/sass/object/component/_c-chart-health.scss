@@ -1,0 +1,18 @@
+.c-chart-health {
+  &__btn-filter {
+    display: flex;
+    gap: rem(16);
+    margin-top: rem(10);
+    button {
+      border-radius: rem(11);
+      background-color: $color-white;
+      color: $color-primary-400;
+      min-width: rem(56);
+      height: rem(24);
+      &.is-active {
+        color: $color-white;
+        background-color: $color-primary;
+      }
+    }
+  }
+}

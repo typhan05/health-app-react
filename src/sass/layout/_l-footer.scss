@@ -1,0 +1,22 @@
+.l-footer {
+  margin-block-start: rem(65);
+  background-color: $color-dark;
+  padding: rem(30) 0;
+  color: $color-white;
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(20);
+    @media screen and (min-width: 768px) {
+      padding: rem(55) 0;
+      gap: rem(45);
+    }
+    &__item {
+      font-size: rem(11);
+      font-style: normal;
+      font-weight: 300;
+      line-height: lh(11, 16);
+      letter-spacing: rem(0.033);
+    }
+  }
+}

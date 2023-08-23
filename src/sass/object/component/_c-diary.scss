@@ -1,0 +1,13 @@
+.c-my-diary {
+  border: 2px solid $color-gray-2;
+  padding: rem(16);
+  min-height: rem(230);
+  &__date {
+    @include h5;
+    letter-spacing: rem(0.09);
+    margin-bottom: rem(10);
+  }
+  &__content {
+    @include p-small;
+  }
+}

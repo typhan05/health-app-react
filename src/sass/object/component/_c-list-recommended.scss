@@ -1,0 +1,18 @@
+.c-list-recommended {
+  margin-block-start: rem(30);
+  margin-block-end: rem(30);
+  @media screen and (min-width: 768px) {
+    margin-block-start: rem(50);
+    margin-block-end: rem(50);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(15);
+    margin-block-end: rem(30);
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(32);
+    }
+  }
+}

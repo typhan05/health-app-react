@@ -1,0 +1,28 @@
+.c-recommended {
+  background-color: $color-dark;
+  padding: rem(24) rem(8);
+  color: $color-white;
+  text-align: center;
+  &__title {
+    position: relative;
+    @include h3;
+    color: $color-primary;
+    letter-spacing: rem(0.11);
+    margin-block-end: rem(7);
+    padding-bottom: rem(10);
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: rem(56);
+      height: 1px;
+      background-color: $color-white;
+    }
+  }
+  &__btn {
+    @include h5;
+  }
+}

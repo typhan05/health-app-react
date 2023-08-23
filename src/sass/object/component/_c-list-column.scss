@@ -1,0 +1,16 @@
+.c-list-column {
+  margin-block-end: rem(30);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(8);
+    row-gap: rem(18);
+    margin-block-end: rem(30);
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
+}

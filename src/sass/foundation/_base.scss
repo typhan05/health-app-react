@@ -1,0 +1,59 @@
+// ==========================================================================
+// html,body
+// ==========================================================================
+/*  common - html,body  */
+
+html {
+  background-color: $color-white;
+  color: $color-font-normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
+  width: 100%;
+  word-break: break-all;
+  overscroll-behavior: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 990px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: calc(100vw / 1280 * 16);
+  }
+}
+
+@media screen and (min-width: 1024) {
+  html {
+    font-size: calc(100vw / 1440 * 14);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}

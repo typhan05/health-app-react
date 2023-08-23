@@ -1,0 +1,10 @@
+.c-back-to-top {
+  position: fixed;
+  right: rem(20);
+  top: 70%;
+  display: none;
+  z-index: 400;
+  &.is-show {
+    display: block;
+  }
+}

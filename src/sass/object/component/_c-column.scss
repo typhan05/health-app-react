@@ -1,0 +1,39 @@
+.c-column {
+  position: relative;
+  &:hover {
+    .c-column__img {
+      transform: scale(1.1);
+    }
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
+    height: rem(145);
+    width: 100%;
+    margin-bottom: rem(5);
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+  }
+  &__date-time {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: rem(3) rem(8);
+    color: $color-white;
+    background-color: $color-primary;
+    max-width: max-content;
+  }
+  &__tag {
+    @include p-small;
+    letter-spacing: rem(0.06);
+    color: $color-primary-400;
+  }
+  &__link {
+    @include link-full;
+  }
+}

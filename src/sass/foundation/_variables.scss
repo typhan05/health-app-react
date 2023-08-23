@@ -1,0 +1,55 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// ============================================================
+// Viewports
+//============================================================
+$desktop-medium: 1440px;
+$desktop-small: 1024px;
+$tablet-medium: 768px;
+$tablet-small: 480px;
+$mobile-small: 320px;
+
+// -----------------------------------------------------------------
+// Common
+// -----------------------------------------------------------------
+$max-width-contents: 1280px;
+
+// -----------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------
+
+//font-family
+$font-family-noto: "Noto Sans JP", sans-serif; // I used Noto Sans JP because not downloaded Hiragino Kaku Gothic Pro.
+$font-family-base: "Inter", sans-serif;
+
+// -----------------------------------------------------------------
+// Color
+// -----------------------------------------------------------------
+
+// color - basic
+$color-white: #fff;
+$color-black: #000;
+$color-dark: #2e2e2e;
+$color-dark-2: #414141;
+$color-gray: #777777;
+$color-gray-2: #707070;
+$color-yellow: #ffcc21;
+$color-orange: #ff963c;
+$color-orange-dark: #ea6c00;
+$color-green: #8fe9d0;
+
+// color - function
+$color-font-normal: $color-dark-2;
+$color-primary: $color-yellow;
+$color-primary-400: $color-orange;
+$color-primary-500: $color-orange-dark;
+$color-secondary: $color-green;
+
+// color - bg
+$bg-button-gradiant: linear-gradient(
+  to top,
+  $color-primary 0%,
+  $color-primary-400 100%
+);

@@ -1,0 +1,116 @@
+// ==========================================================================
+// mixin - common
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Layout関連
+// -----------------------------------------------------------------
+
+// /**
+// * l-wrapperのmixin
+// * @include l-wrapper($max-width-contents) {}
+// * @param $max-width
+// */
+@mixin l-wrapper($max-width) {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  min-width: $max-width;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
+  width: 100%;
+}
+
+@mixin l-main {
+  z-index: 1;
+  flex: 1 1 auto;
+  padding: 40px;
+  min-height: 1px;
+}
+
+// /**
+// * font heading textのmixin
+// * @include h{i} {}
+// */
+@mixin h1 {
+  font-size: rem(25);
+  line-height: lh(25, 30);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(30);
+    line-height: lh(30, 35);
+  }
+}
+
+@mixin h2 {
+  font-size: rem(20);
+  line-height: lh(20, 25);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(25);
+    line-height: lh(25, 30);
+  }
+}
+
+@mixin h3 {
+  font-size: rem(18);
+  line-height: lh(18, 24);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(22);
+    line-height: lh(22, 27);
+  }
+}
+
+@mixin h4 {
+  font-size: rem(18);
+  line-height: lh(18, 24);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(20);
+    line-height: lh(20, 24);
+  }
+}
+
+@mixin h5 {
+  font-size: rem(16);
+  line-height: lh(16, 20);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(18);
+    line-height: lh(18, 22);
+  }
+}
+
+@mixin h6 {
+  font-size: rem(14);
+  line-height: lh(14, 18);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(16);
+    line-height: lh(16, 23);
+  }
+}
+
+@mixin p {
+  font-size: rem(14);
+  line-height: lh(14, 18);
+  @media screen and (min-width: $tablet-medium) {
+    font-size: rem(15);
+    line-height: lh(15, 22);
+  }
+}
+
+@mixin p-md {
+  font-size: rem(14);
+  line-height: lh(14, 20);
+}
+
+@mixin p-small {
+  font-size: rem(12);
+  line-height: lh(12, 17);
+}
+
+@mixin link-full {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
